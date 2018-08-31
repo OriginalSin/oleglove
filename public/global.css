@@ -1,0 +1,64 @@
+/* header */
+header {
+  text-align: center;
+  padding-top: 79px;
+}
+header p {
+  font-family: Georgia;
+  font-style: italic;
+  color: #737f80;
+}
+.header-logo {
+  padding-bottom: 18px;
+}
+.header-navigation {
+  background-color: #329fa9;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  position: relative;
+}
+.header-navigation .flag-left,
+.header-navigation .flag-right {
+  position: absolute;
+  top: 20px;
+  display: block;
+  width: 71px;
+  height: 78px;
+}
+.header-navigation .flag-left {
+  left: -71px;
+  background: url('../images/flag_left.png') no-repeat;
+}
+@media only screen and (max-width: 1400px) {
+  .header-navigation .flag-left {
+    display: none;
+  }
+}
+.header-navigation .flag-right {
+  right: -71px;
+  left: auto;
+  background: url('../images/flag_right.png') no-repeat;
+}
+@media only screen and (max-width: 1400px) {
+  .header-navigation .flag-right {
+    display: none;
+  }
+}
+.content-menu {
+    display: inline-block;
+    margin-bottom: 23px;
+}
+.content-menu ul li {
+    float: left;
+}
+.content-menu ul li {
+    color: #839495;
+    font-style: italic;
+    color: Georgia;
+    font-size: 18px;
+    line-height: 9px;
+    display: inline-block;
+    position: relative;
+    margin-right: 3px;
+    padding: 0 20px;
+}

@@ -1,0 +1,685 @@
+  <header id="header">
+	<Logo hashLang="{hashLang}" />
+	<Menu hashLang="{hashLang}" bind:pathname />
+  </header>
+
+<section id="content">
+<div class="container">
+      <h2 class="align-left conf-pad-h2 pb16">Get in Touch</h2>
+       <div class="block-map">
+            <div class="map">
+<iframe src="https://yandex.ru/map-widget/v1/-/CBBIbEhbWC" width="100%" height="350" title="Волжская любовь" frameborder="1" allowfullscreen="true"></iframe>
+ </div>
+
+          </div>
+
+          <div class="row">
+            <div class="grid_3">
+              <div class="contact-text">
+                <h3 class="dark1">8901 Marmora Road,<br>
+Glasgow, D04 89GR.</h3>
+                <div class="contact-item">
+                  <div class="f_left">Freephone: </div>
+                  <div class="f_right">+1 800 559 6580</div>
+                  <div class="clear"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="f_left">Telephone:</div>
+                  <div class="f_right">1 800 603 6035</div>
+                  <div class="clear"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="f_left">FAX:</div>
+                  <div class="f_right">+1 800 889 9898 </div>
+                  <div class="clear"></div>
+                </div>
+                <p>E-mail:<a href="mailto:privacy@demolink.org">mail@demolink.org</a></p>
+              </div>
+            </div>
+            <div class="grid_3 preffix_1">
+              <div class="contact-text">
+                <h3 class="dark1">9863 - 9867 Mill Road, <br>
+Cambridge, MG09 99HT.</h3>
+                  <div class="contact-item">
+                  <div class="f_left">Freephone: </div>
+                  <div class="f_right">+1 800 559 6580</div>
+                  <div class="clear"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="f_left">Telephone:</div>
+                  <div class="f_right">1 800 603 6035</div>
+                  <div class="clear"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="f_left">FAX:</div>
+                  <div class="f_right">+1 800 889 9898 </div>
+                  <div class="clear"></div>
+                </div>
+                <p>E-mail:<a href="mailto:privacy@demolink.org">mail@demolink.org</a></p>
+              </div>
+            </div>
+            <div class="grid_3 preffix_1">
+              <div class="contact-text">
+                <h3 class="dark1">9870 St Vincent Place,<br>
+Glasgow, DC 45 Fr 45.</h3>
+                 <div class="contact-item">
+                  <div class="f_left">Freephone: </div>
+                  <div class="f_right">+1 800 559 6580</div>
+                  <div class="clear"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="f_left">Telephone:</div>
+                  <div class="f_right">1 800 603 6035</div>
+                  <div class="clear"></div>
+                </div>
+                <div class="contact-item">
+                  <div class="f_left">FAX:</div>
+                  <div class="f_right">+1 800 889 9898 </div>
+                  <div class="clear"></div>
+                </div>
+                <p>E-mail:<a href="mailto:privacy@demolink.org">mail@demolink.org</a></p>
+                
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="contact-form-body">
+           <h2 class="align-left conf-pad-h2 pb16">Contact Form</h2>
+          
+          <form id="contact-form" method="POST" action="bat/MailHandler.php">
+             <fieldset>
+               
+                  
+                    <label class="name label1">
+                      <input type="text" name="name" value="" data-constraints="@Required @JustLetters" id="regula-generated-169535">
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid name.</span>
+                    <span class="_placeholder" style="left: 0px; top: 0px; width: 234px; height: 50px;">Name:</span></label>
+                
+                  <label class="email label1">
+                    <input type="text" name="email" value="" data-constraints="@Required @Email" id="regula-generated-977357">
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid email.</span>
+                    <span class="_placeholder" style="left: 0px; top: 0px; width: 234px; height: 50px;">Email:</span></label>
+            
+                    <label class="name phone f_right">
+                      <input type="text" name="last_name" value="" data-constraints="@Required @JustNumbers" id="regula-generated-449487">
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid number.</span>
+                    <span class="_placeholder" style="left: 0px; top: 0px; width: 234px; height: 50px;">Phone:</span></label>
+               
+
+               
+                      
+               
+             
+                  <label class="message">
+                      <textarea name="message" rows="7" data-constraints="@Required @Length(min=20,max=999999)" id="regula-generated-870470"></textarea>
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*The message is too short.</span>
+                    <span class="_placeholder" style="left: 0px; top: 14px; width: 234px; height: 243px;">Message:</span></label>
+                    <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                    <div class="form-buttons">
+                      <div class="button-send">
+                        
+                        <a href="." class="button dark-bord send-button" data-type="submit">Submit</a>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+          </fieldset> 
+           <div class="modal fade response-message">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  You message has been sent! We will be in touch soon.
+                </div>      
+              </div>
+            </div>
+          </div>
+          <input type="hidden" name="stripHTML" value="true"></form>
+          </div>
+    </div>
+</section>
+<style>
+/*========================================================
+                    map
+=========================================================*/
+.block-map {
+  position: relative;
+  float: left;
+}
+@media only screen and (max-width: 1530px) {
+  .block-map {
+    float: none;
+  }
+}
+.block-map {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 24px;
+  margin-top: 8px;
+}
+@media only screen and (max-width: 1530px) {
+  .block-map {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .block-map {
+    height: 300px;
+  }
+}
+.map {
+  padding-top: 11px;
+  padding-bottom: 12px;
+}
+.map img {
+  max-width: inherit;
+}
+.map #map-canvas {
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .map #map-canvas {
+    height: 300px;
+  }
+}
+.map figure {
+  display: block;
+  padding-top: 56px;
+  margin-bottom: 24px;
+}
+.map figure iframe {
+  width: 100%;
+  height: 350px;
+  max-width: 100%;
+}
+.google-map-api {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#map-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#map-canvas img {
+  max-width: none !important;
+}
+.contact-text h3 {
+  color: #a2a3a3;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: Open Sans;
+  padding-bottom: 3px;
+}
+.contact-text a {
+  font-size: 17px;
+  line-height: 22px;
+  color: #329fa9;
+  font-style: italic;
+  margin-left: 3px;
+  font-weight: 300;
+}
+.contact-text a:hover {
+  color: #ef7261;
+}
+/* Contact Form variables
+========================================================*/
+/* Contact Form Basic Styles 
+========================================================*/
+#contact-form {
+  position: relative;
+}
+#contact-form label {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 9px;
+}
+#contact-form fieldset {
+  border: none;
+}
+/* Contact Form Placeholder Styles 
+========================================================*/
+#contact-form ._placeholder {
+  width: 100% !important;
+  color: #bbbaba;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  font-family: Arial;
+  font-weight: 400;
+  padding: 14px 17px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: text;
+}
+#contact-form ._placeholder.focused {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+#contact-form ._placeholder.hidden {
+  display: none;
+}
+#contact-form .file ._placeholder {
+  display: none;
+}
+/* Contact Form Input 
+========================================================*/
+#contact-form input[type='text'] {
+  width: 100%;
+  color: #bbbaba;
+  padding: 14px 17px;
+  outline: none;
+  font-weight: 400;
+  height: 50px;
+  font-size: 14px;
+  font-family: Arial;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px #cacaca solid;
+}
+/* Contact Form File Input 
+========================================================*/
+#contact-form .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contact-form input.form-control[disabled] {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+#contact-form input.form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  box-shadow: none;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#contact-form .input-group-btn:first-child > .btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0 -1px 0 0;
+}
+#contact-form .input-group .form-control:last-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+#contact-form .input-group-btn:last-child > .btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+#contact-form .input-group .form-control:first-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+#contact-form input.form-control,
+#contact-form .input-group-btn {
+  display: table-cell;
+  border-collapse: separate;
+  float: none !important;
+}
+#contact-form .input-group-btn label {
+  width: auto;
+  margin-left: -1px;
+}
+#contact-form .input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+}
+#contact-form .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contact-form .btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+#contact-form .btn-default:hover {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+#contact-form .btn-default:active,
+#contact-form .btn-default:focus {
+  outline-offset: -2px;
+  outline: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+/* Contact Form Textarea 
+========================================================*/
+#contact-form textarea {
+  width: 100%;
+  padding: 17px 16px;
+  font-weight: 400;
+  font-family: Arial;
+  padding: 14px 17px;
+  font-size: 14px;
+  color: #bbbaba;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+  height: 243px;
+  background-color: #ffffff;
+  margin-top: 14px;
+  margin-bottom: -6px;
+  border: 1px #cacaca solid;
+}
+/* Contact Form Error messages
+========================================================*/
+#contact-form .empty-message,
+#contact-form .error-message {
+  position: absolute;
+  right: 3px;
+  top: 2px;
+  color: red;
+  height: 0;
+  overflow: hidden;
+  font-size: 11px;
+  -webkit-transition: 0.3s ease-in height;
+  transition: 0.3s ease-in height;
+  z-index: 99;
+}
+#contact-form .invalid .error-message,
+#contact-form .empty .empty-message {
+  height: 20px;
+}
+/* Contact Form Processing Box
+========================================================*/
+#contact-form .contact-form-loader {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  background-image: url('../images/form-loader.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0;
+}
+#contact-form.processing .contact-form-loader {
+  opacity: 1;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/* Contact Form Modal 
+========================================================*/
+.modal-open {
+  overflow: hidden;
+}
+#contact-form .modal {
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  font-family: Arial, "Times New Roman", sans-serif;
+  font-size: 13px;
+}
+#contact-form .modal h4 {
+  font-weight: bold !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #000 !important;
+  font-size: 15px;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.42857143px;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 20px;
+  color: #525151 !important;
+}
+.modal-dialog {
+  width: 600px;
+  margin: 10px auto;
+}
+@media only screen and (max-width: 768px) {
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+  }
+}
+/* Contact Form Close icon 
+========================================================*/
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000 !important;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.close:hover,
+.close:focus {
+  color: #000000 !important;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.contact-form-body {
+  padding-bottom: 61px;
+}
+.contact-form-body .dark-2-title {
+  padding-bottom: 25px;
+}
+label.name,
+label.email {
+  width: 32% !important;
+}
+@media only screen and (max-width: 1199px) {
+  label.name,
+  label.email {
+    width: 100% !important;
+  }
+}
+label.label1 {
+  margin-right: 19px;
+}
+.phone {
+  padding-right: 0px !important;
+}
+.f_right {
+  float: right;
+}
+.button-send {
+  padding-top: 11px;
+}
+.button-send a {
+  margin-right: 15px;
+}
+@media only screen and (max-width: 479px) {
+  .button-send a {
+    margin-bottom: 15px;
+  }
+}
+.button {
+  background-color: #ef7261;
+  padding: 5px 23px;
+  color: #ffffff;
+}
+.button:hover {
+  background-color: #329fa9;
+}
+.message span.empty-message,
+.message span.error-message {
+  top: 21px !important;
+}
+.contact-form-body h2 {
+  padding-top: 52px;
+  padding-bottom: 22px;
+}
+.page-text {
+  padding: 0 19px;
+  padding-bottom: 50px;
+}
+.page-text h3 {
+  padding-bottom: 11px;
+}
+.page-text p {
+  padding-bottom: 18px;
+}
+.page-text a {
+  font-size: 17px;
+  line-height: 22px;
+  color: #329fa9;
+  font-style: italic;
+  font-weight: 300;
+}
+.page-text a:hover {
+  color: #ef7261;
+}
+
+</style>
+<script>
+
+	export default {
+		data() {
+			return {
+				pathname: 'Blog',
+				lang: 'ru',
+				hashLang: {}
+			}
+		},
+		components: {
+			Logo: './Logo.html',
+			Menu: './Menu.html'
+		}
+	}
+</script>

@@ -1,0 +1,92 @@
+  <header id="header">
+	<Logo hashLang="{hashLang}" />
+	<Menu hashLang="{hashLang}" bind:pathname />
+  </header>
+<!--========================================================
+                            CONTENT 
+  =========================================================-->
+  
+  <section id="content">
+<div class="container">
+       <div class="row">
+         <div class="grid_8">
+            <h2 class="align-left conf-pad-h2">A Few Words About Us</h2>
+            <div class="wrapper1 pb0">
+              <div class="post-img"><img src="images/page2_image1.jpg" alt="post image"></div>
+              <div class="post-info">
+                <p class="uppercase">dolor sit amet consectetur adipiscing eliVes tibulum sap ien nibeg estas sit amet massa ut imperdiet </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulai um sapien nibh, egestas sit amet massa ut, imperdiet ornare sem. Nam odio sapien, feugiat sed odio quis, interdum pulvinar mi. Qui sque moles tie est dolu ultrices magna ult ri ces sed. Mauris id vulp utate orci, ut lacinia libero. Sed quis neque nunc. Integer id nisl qu is dolor gravida conras at dictum leo egestasaccumsan diam. Susp endisse nec nisi ac ligula ornare ultricies et ultricies nisi. Fusce eu dictum dui, quis iaculis turpis. Suspendisse potenti. Vivamus euis mod ipsum sit amet elit euismod vitae pulvinar</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+             <h2 class="align-left conf-pad-h2 pt52">Video, Search and Communication Tools</h2>
+                  <div class="label-post">
+               <div class="label"><img src="images/page2_icon1.jpg" alt="post image"></div>
+               <div class="post-info">
+                 <h3 class="pine">communication</h3>
+                 <p>Vestibulai um sapien nibh, egestas sit amet massa ut, imperdiet ornare sem. Nam odio sapien, feugiat sed odio quis, interdum pulvinar mi. Qui sque moles tie est dolu ultrices magna ult ri ces sed. Mauris id vulp utate orci, ut lacinia neque nunc. Integer</p>
+               </div>
+             </div>
+             <div class="label-post">
+               <div class="label"><img src="images/page2_icon2.jpg" alt="post image"></div>
+               <div class="post-info">
+                 <h3 class="pine">search</h3>
+                 <p>Qui sque moles tie est dolu ultrices magna ult ri ces sed. Mauris id vulp utate orci, ut lacinia neque nunc. Integer id nisl qu is dolor gravida conras at dictum leo egestasaccumsan diam. Su sp endisse nec nisi ac ligula ornare ultricies et ultriciesusce eu dictum</p>
+               </div>
+             </div>
+             <div class="label-post">
+               <div class="label"><img src="images/page2_icon3.jpg" alt="post image"></div>
+               <div class="post-info">
+                 <h3 class="pine">Video
+</h3>
+                 <p>Integer id nisl qu is dolor gravida conras at dictum leo egestasaccumsan diam. Susp endisse ne c nisi ac ligula ornare ultricies et ultricies nisi. Fusce eu dictum dui, quis iaculis turpis. Suspendi sse potenti. Vivamus euis mod ipsum sit amet elit euismod vitae pulvinar</p>
+               </div>
+             </div>
+         </div>
+         <div class="grid_4">
+           <h2 class="align-left conf-pad-h2">What We Offer</h2>
+           <p class="uppercase">consectetur adipiscing eliVes tibulum sap ien nibeg estas sit amet massa ut</p>
+           <ul class="listing">
+             <li><a href=".">Etiam cursus leo piusum erdi</a></li>
+             <li><a href=".">Nulla facilisii primis nec</a></li>
+             <li><a href=".">Aenean nec eros luctus </a></li>
+             <li><a href=".">Vestibulum ante faucibus orci </a></li>
+             <li><a href=".">Ultrices posuere itudin </a></li>
+             <li><a href=".">Suspendisse sollic velitaugue</a></li>
+             <li><a href=".">Ut pharetra augue nec </a></li>
+             <li><a href=".">Nam elit agna,endrerit sit amet</a></li>
+             <li><a href=".">Tincidunt ac, viverra</a></li>
+           </ul>
+
+
+           <div class="image-link">
+            <img src="images/page2_image2.jpg" alt="image-link">
+            <div class="link"><a href=".">success stories</a></div>
+           </div>
+         </div>
+       </div>
+     </div>
+ 
+  </section>
+
+<style>
+	h1 {
+		color: purple;
+	}
+</style>
+
+<script>
+	export default {
+		data() {
+			return {
+				pathname: 'About',
+				lang: 'ru',
+				hashLang: {}
+			}
+		},
+		components: {
+			Logo: './Logo.html',
+			Menu: './Menu.html'
+		}
+	}
+</script>

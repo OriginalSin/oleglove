@@ -1,0 +1,100 @@
+<div class="min-body">
+{#if pathname === 'Main'}
+	<Main lang="{lang}" hashLang="{hashLang}" bind:pathname />
+{:elseif pathname === 'About'}
+	<About lang="{lang}" hashLang="{hashLang}" bind:pathname />
+{:elseif pathname === 'Catalog'}
+	<Catalog lang="{lang}" hashLang="{hashLang}" bind:pathname />
+{:elseif pathname === 'Blog'}
+	<Blog lang="{lang}" hashLang="{hashLang}" bind:pathname />
+{:elseif pathname === 'Contacts'}
+	<Contacts lang="{lang}" hashLang="{hashLang}" bind:pathname />
+{:else}
+	<Main lang="{lang}" hashLang="{hashLang}" />
+{/if}
+</div>
+<Footer hashLang="{hashLang}" />
+
+<a href="." id="toTop" class="fa fa-chevron-up" style="display: none;">.</a>
+
+<style>
+
+</style>
+
+<script>
+	const loc = window.location,
+		//pathnames: ['Main', 'About', 'Catalog', 'Blog', 'Contacts'],
+		pathname = loc.pathname,
+		paths = {
+			'/index.html': 'Main'
+		},
+		search = loc.search,
+		arr = search ? search.substr(1).split('&') : [],
+		pars = arr.reduce((a, b) => { let p = b.split('='); a[p[0]] = p[1]; return a; }, {}),
+		lang = pars.lang || 'ru';
+
+	export default {
+		data() {
+			return {
+				lang: lang,
+				hashLang: {},
+				pathname: 'Main',
+				params: {
+					site: {value: 'Делянка'}
+				},
+				limit: 0,
+				cols: []
+			}
+		},
+		components: {
+			Main: './Main.html',
+			About: './About.html',
+			Catalog: './Catalog.html',
+			Blog: './Blog.html',
+			Contacts: './Contacts.html',
+			Footer: './Footer.html'
+		},
+	
+		methods: {
+			setLang(id) {
+				this.set({
+					hashLang: id === 'en' ? {
+						Main: 'Main',
+						About: 'About Us',
+						Catalog: 'Our Gallery',
+						Blog: 'Blog',
+						Contacts: 'Contacts',
+						h1: 'Volga',
+						h2: 'Song',
+						social: 'Find Us On Social Network:',
+						agency: 'dating agency'
+					} :
+					{
+						Main: 'Главная',
+						About: 'О нас',
+						Catalog: 'Галерея',
+						Blog: 'Блог',
+						Contacts: 'Контакты',
+						h1: 'Волжская',
+						h2: 'любовь',
+						social: 'Мы в социальных сетях:',
+						agency: 'брачное агенство'
+				}})
+			}
+		},
+		
+		oncreate() {
+			this.setLang(lang);
+// console.log('in oncreate', gmxMap);
+			// this.set({layerIds: layerIds, quadrantIds: quadrantIds, cols: []});
+		},
+
+		onstate({ changed, current, previous }) {
+// console.log('in onstate', this);
+			if (changed.lang) {
+				this.setLang(current.lang);
+			}
+		}
+
+	}
+</script>
