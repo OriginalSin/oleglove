@@ -27,7 +27,7 @@ header p {
 }
 .header-navigation .flag-left {
   left: -71px;
-  background: url('../images/flag_left.png') no-repeat;
+  background: url('./images/flag_left.png') no-repeat;
 }
 @media only screen and (max-width: 1400px) {
   .header-navigation .flag-left {
@@ -37,7 +37,7 @@ header p {
 .header-navigation .flag-right {
   right: -71px;
   left: auto;
-  background: url('../images/flag_right.png') no-repeat;
+  background: url('./images/flag_right.png') no-repeat;
 }
 @media only screen and (max-width: 1400px) {
   .header-navigation .flag-right {
